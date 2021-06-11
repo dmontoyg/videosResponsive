@@ -1,0 +1,44 @@
+/* Para que tenga la proporción de 16/9 */
+.contenedor{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+/* Soporte para los diferentes tipos de video insertado que existen*/
+.contenedor iframe,
+.contenedor object,
+.contenedor embed,
+.contenedor video{
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#wrapper{
+    /*max-width: 1000px;*/
+    margin: auto;
+    padding: 50px;
+}
+
+.col1,
+.col2{
+    width: 45%;
+    float: left;
+}
+
+.col1{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 1000px;) {
+    .col1,
+    .col2{
+        width: auto;
+    }
+}
